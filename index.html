@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <!-- start Header -->
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">GYM<em> NAME</em></a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li class="scroll-to-section">
+                  <a href="#top" id="btn1" class="active">Home</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="#About" id="btn2">About</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="#schedule" id="btn4">Schedules</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="#Trainers" id="btn3">Trainers</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="#price" id="btn5">Prices</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="#contact" id="btn6">Contact</a>
+                </li>
+                <li class="main-button"><a><i class="fa fa-search""></i></a></li>
+              </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end Header -->
+    <!-- start Home -->
+    <div class="main-banner" id="top">
+      <video autoplay muted loop id="bg-video">
+        <source src="images/gym-video.mp4" type="video/mp4" />
+      </video>
+      <div class="video-overlay header-text">
+        <div class="caption">
+          <h6>work harder, get stronger</h6>
+          <h2>easy with our <em>gym</em></h2>
+          <div class="main-button scroll-to-section">
+            <a href="#About">Become a member</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Home -->
+    <!-- start About -->
+    <section class="section" id="About">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-lg-10 offset-lg-1"> -->
+            <div class="cta-content">
+              <h2>About US</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sint, odit impedit illum, similique quisquam sunt vel alias,
+                aut corporis iusto nihil quibusdam rem ipsa nostrum autem deserunt vero debitis quas?
+              </p>
+              <div class="main-button scroll-to-section">
+                <a href="#schedule">Become a member</a>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- end About -->
+    <!-- start Schedules -->
+    <section class="section" id="schedule">
+      <div class="container">
+          <div class="row">
+            <div class="section-heading dark-bg">
+              <h2><em>Schedules</em></h2>
+              <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna</p>
+            </div>
+          </div>
+          <div class="select">
+            <form>
+              <div class="selectW">
+                <label for="x">your Weight : </label>
+                <input id="x" type="number" >
+              </div>
+              <div class="selectL">
+                <label for="y">your length : </label>
+                <input id="y" type="number">
+              </div>
+              <div class="sub">
+                <a id="sub">ok</a>
+              </div>
+            </form>
+          </div>
+          <div class="row">
+              <div class="col-lg-10 offset-lg-1">
+                  <div class="schedule-table filtering">
+                      <table>
+                          <tbody>
+                              <tr>
+                                <td><h1>DAY</h1></td>
+                                <td><h1>10:00AM - 12:00AM</h1></td>
+                                <td><h1>12:00PM - 2:00PM</h1></td>
+                                <td><h1>2:00PM - 4:00PM</h1></td>
+                              </tr>
+                              <tr>
+                                <td><h1>Sun</h1></td>
+                                <td><h3 id="b1" class="vis">Aerobics</h3></td>
+                                <td><h3 id="b2" class="vis">Thai Massages</h3></td>
+                                <td><h3 id="b3" class="vis">Yoga Courses</h3></td>
+                              </tr>
+                              <tr>
+                                <td><h1>Mon</h1></td>
+                                <td><h3 id="b4" class="vis">Thai Massages</h3></td>
+                                <td><h3 id="b5" class="vis">Yoga Courses</h3></td>
+                                <td><h3 id="b6" class="vis">Aerobics</h3></td>
+                              </tr>
+                              <tr>
+                                <td><h1>Tue</h1></td>
+                                <td><h3 id="b7" class="vis">Thai Massages</h3></td>
+                                <td><h3 id="b8" class="vis">Aerobics</h3></td>
+                                <td><h3 id="b9" class="vis">Yoga Courses</h3></td>
+                              </tr>
+                              <tr>
+                                <td><h1>Wed</h1></td>
+                                <td><h3 id="b10" class="vis">Aerobics</h3></td>
+                                <td><h3 id="b11" class="vis">Yoga Courses</h3></td>
+                                <td><h3 id="b12" class="vis">Thai Massages</h3></td>
+                              </tr>
+                              <tr>
+                                <td><h1>Thu</h1></td>
+                                <td><h3 id="b13" class="vis">Yoga Courses</h3></td>
+                                <td><h3 id="b14" class="vis">Thai Massages</h3></td>
+                                <td><h3 id="b15" class="vis">Aerobics</h3></td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!-- end Schedules -->
+    <!-- start team -->
+    <div class="team" id="Trainers">
+      <div class="max-width">
+        <h2 class="title">Our Trainers</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
+        <div class="team-content">
+          <div class="wrapper">
+            <div class="card front-face">
+              <img src="images/profile-1.jpg" />
+            </div>
+            <div class="card back-face">
+              <img src="images/profile-1.jpg" />
+              <div class="info">
+                <div class="title1">Trainer Name</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, eos eius</p>
+              </div>
+              <ul>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </ul>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="card front-face">
+              <img src="images/profile-2.jpg" />
+            </div>
+            <div class="card back-face">
+              <img src="images/profile-2.jpg" />
+              <div class="info">
+                <div class="title1">Trainer Name</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, eos eius</p>
+              </div>
+              <ul>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </ul>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="card front-face">
+              <img src="images/profile-3.jpg" />
+            </div>
+            <div class="card back-face">
+              <img src="images/profile-3.jpg" />
+              <div class="info">
+                <div class="title1">Trainer Name</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, eos eius</p>
+              </div>
+              <ul>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </ul>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="card front-face">
+              <img src="images/profile-4.jpg" />
+            </div>
+            <div class="card back-face">
+              <img src="images/profile-4.jpg" />
+              <div class="info">
+                <div class="title1">Trainer Name</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, eos eius</p>
+              </div>
+              <ul>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </ul>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="card front-face">
+              <img src="images/profile-5.jpg" />
+            </div>
+            <div class="card back-face">
+              <img src="images/profile-5.jpg" />
+              <div class="info">
+                <div class="title1">Trainer Name</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, eos eius</p>
+              </div>
+              <ul>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end team -->
+    <!-- start Prices -->
+    <section id="price" class="parallax-section">
+      <div class="container">
+        <div class="row">
+          <div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="0.9s">
+            <h2>Our Prices</h2>
+            <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo.</p>
+          </div>
+          <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="1s">
+            <div class="pricing__item">
+              <h3 class="pricing__title">Healthy</h3>
+              <div class="pricing__price">
+                <span class="pricing__currency">$</span>350
+              </div>
+              <ul class="pricing__feature-list">
+                <li class="pricing__feature">One General Trainer</li>
+                <li class="pricing__feature">Gym Services</li>
+                <li class="pricing__feature">5 Yoga Courses</li>
+                <li class="pricing__feature">10 Thai Massages</li>
+                <li class="pricing__feature">15 Aerobics</li>
+              </ul>
+              <button class="pricing__action">Sign Up Now</button>
+            </div>
+          </div>
+          <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="1.3s">
+            <div class="pricing__item">
+              <h3 class="pricing__title">Best Fit</h3>
+              <div class="pricing__price">
+                <span class="pricing__currency">$</span>550
+              </div>
+              <ul class="pricing__feature-list">
+                <li class="pricing__feature">Two General Trainers</li>
+                <li class="pricing__feature">Gym Services</li>
+                <li class="pricing__feature">10 Yoga Courses</li>
+                <li class="pricing__feature">20 Thai Massages</li>
+                <li class="pricing__feature">25 Aerobics</li>
+              </ul>
+              <button class="pricing__action">Sign Up Now</button>
+            </div>
+          </div>
+          <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="1.6s">
+            <div class="pricing__item">
+              <h3 class="pricing__title">Rigid Body</h3>
+              <div class="pricing__price">
+                <span class="pricing__currency">$</span>750
+              </div>
+              <ul class="pricing__feature-list">
+                <li class="pricing__feature">Three General Trainers</li>
+                <li class="pricing__feature">Gym Services</li>
+                <li class="pricing__feature">15 Yoga Courses</li>
+                <li class="pricing__feature">20 Thai Massages</li>
+                <li class="pricing__feature">35 Aerobics</li>
+              </ul>
+              <button class="pricing__action">Sign Up Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Prices -->
+    <!-- start contact -->
+    <div class="contact" id="contact">
+      <div class="max-width">
+        <div class="title">
+          <h2>Contact</h2>
+          <p>Follow Us</p>
+        </div>
+        <div class="con-content">
+          <div class="icons">
+            <a href="#">
+              <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fab fa-facebook-f"></span>
+              </div>
+              <div class="text">Facebook</div>
+            </a>
+            <a href="#">
+              <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fab fa-twitter"></span>
+              </div>
+              <div class="text">Twitter</div>
+            </a>
+            <a href="#">
+              <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fab fa-instagram"></span>
+              </div>
+              <div class="text">Instagram</div>
+            </a>
+            <a href="#">
+              <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fab fa-linkedin-in"></span>
+              </div>
+              <div class="text">Linkedin</div>
+            </a>
+            <a href="#">
+              <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fab fa-youtube"></span>
+              </div>
+              <div class="text">YouTube</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end contact -->
+    <!-- start footer -->
+    <div class="footer">
+      <span
+        >Created By <a href="linkedin.com/in/ammar-shalati/">Ammar</a> |
+        <span class="far fa-copyright"></span> 2022 All rights reserved.
+      </span>
+    </div>
+    <!-- end footer -->
+    <script src="js/master.js"></script>
+  </body>
+</html>
